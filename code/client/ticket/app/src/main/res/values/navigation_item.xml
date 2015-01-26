@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="account_manager">账号管理</array>
+    <array name="route_planning">账号管理</array>
+    <array name="prompts">账号管理</array>
+    <array name="setting">账号管理</array>
+    <array name="about">账号管理</array>
+
+</resources>

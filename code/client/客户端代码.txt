@@ -1,0 +1,2 @@
+2015/01/26  shou:
+add ticket project, this project is an android studio project.

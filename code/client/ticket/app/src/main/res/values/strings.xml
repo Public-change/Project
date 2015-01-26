@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ticket</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="location">未定位</string>
+    <string name="title_activity_account_manager">AccountManager</string>
+    <string name="title_activity_route_plan">Route_plan</string>
+    <string name="title_activity_setting">Setting</string>
+    <string name="title_activity_prompt">Prompt</string>
+    <string name="title_activity_about">About</string>
+
+</resources>
