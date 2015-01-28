@@ -21,7 +21,7 @@
             android:label="@string/title_activity_account_manager" >
         </activity>
         <activity
-            android:name=".Route_plan"
+            android:name=".RoutePlan"
             android:label="@string/title_activity_route_plan" >
         </activity>
         <activity

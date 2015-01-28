@@ -4,38 +4,7 @@
     android:layout_height="match_parent"
     tools:context="com.change.ticket.MainActivity">
 
-    <RelativeLayout
-        android:id="@+id/action_bar"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/abc_action_bar_default_height_material"
-        android:background="@color/darkkhaki">
-
-        <ImageView
-            android:id="@+id/menu_button"
-            android:layout_width="@dimen/abc_action_button_min_width_material"
-            android:layout_height="match_parent"
-            android:layout_alignParentLeft="true"
-            android:src="@drawable/ic_launcher"/>
-
-        <TextView
-            android:id="@+id/city"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:textSize="@dimen/abc_text_size_title_material_toolbar"
-            android:textColor="@color/black"
-            android:gravity="center"
-            android:layout_centerInParent="true"
-            android:text="@string/location" />
-
-        <ImageView
-            android:id="@+id/location"
-            android:layout_width="@dimen/abc_action_button_min_width_material"
-            android:layout_height="match_parent"
-            android:layout_alignParentRight="true"
-            android:src="@drawable/ic_launcher"/>
-
-
-    </RelativeLayout>
+    <include layout="@layout/actionbar"/>
 
     <ListView
         android:id="@+id/station_list"
