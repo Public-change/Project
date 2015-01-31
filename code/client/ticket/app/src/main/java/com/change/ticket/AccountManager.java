@@ -1,39 +1,28 @@
 package com.change.ticket;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 
-public class AccountManager extends ActionBarActivity {
+public class AccountManager extends Activity {
+
+    private com.change.ticket.ActionBar actionBar = new com.change.ticket.ActionBar();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account_manager);
+
+        actionBar.leftImageView = (ImageView) findViewById(R.id.left_image_view);
+        actionBar.rightImageView = (ImageView) findViewById(R.id.right_image_view);
+        actionBar.centerTextView = (TextView) findViewById(R.id.center_text_view);
+
+        actionBar.leftImageView.setImageResource(R.drawable.ic_launcher);
+        actionBar.rightImageView.setImageResource(R.drawable.ic_launcher);
+        actionBar.centerTextView.setText(R.string.title_activity_account_manager);
     }
 
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_account_manager, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 }

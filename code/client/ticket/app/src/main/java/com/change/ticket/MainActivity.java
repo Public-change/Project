@@ -10,7 +10,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,9 +29,9 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        actionBar.menuButton = (ImageView) findViewById(R.id.menu_button);
-        actionBar.location = (ImageView) findViewById(R.id.location);
-        actionBar.city = (TextView) findViewById(R.id.city);
+        actionBar.leftImageView = (ImageView) findViewById(R.id.left_image_view);
+        actionBar.rightImageView = (ImageView) findViewById(R.id.right_image_view);
+        actionBar.centerTextView = (TextView) findViewById(R.id.center_text_view);
         navigation = (ListView) findViewById(R.id.navigation);
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         stationListView = (ListView) findViewById(R.id.station_list);
@@ -43,6 +42,10 @@ public class MainActivity extends Activity {
 
         StationAdapter stationAdapter = new StationAdapter(MainActivity.this, R.layout.staion_item, stationList);
         stationListView.setAdapter(stationAdapter);
+
+        actionBar.leftImageView.setImageResource(R.drawable.ic_launcher);
+        actionBar.centerTextView.setText(R.string.location);
+        actionBar.rightImageView.setImageResource(R.drawable.ic_launcher);
 
 
     }
@@ -117,13 +120,6 @@ public class MainActivity extends Activity {
         stationList.add(o);
         stationList.add(p);
 
-    }
-
-    class ActionBar
-    {
-        private ImageView menuButton;
-        private ImageView location;
-        private TextView city;
     }
 
 }
